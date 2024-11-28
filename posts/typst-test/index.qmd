@@ -1,0 +1,44 @@
+---
+title: "Hello Typst!"
+format:
+  typst:
+    keep-typ: true
+    mainfont: "Hiragino Mincho ProN"
+  html:
+    code-fold : true
+jupyter: python3
+---
+
+# Introduction 
+
+コードと数式が混ざったノートがこんなにきれいに作れちゃう。
+
+# 数式
+
+ガウス積もかけちゃう。
+
+$$ 
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$
+
+
+# python のコード
+
+python aiueo
+```{python}
+#| label: fig-polar
+#| fig-cap: "日本語のキャプションも大丈夫"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.04)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
