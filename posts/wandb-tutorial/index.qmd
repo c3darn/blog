@@ -1,0 +1,15 @@
+---
+title: "mnistを通じてwandbを触る"
+author: "Harlow Malloc"
+date: "2024-06-22"
+categories: [news, code, analysis]
+image: "wandb-logo.png"
+---
+
+# wandbとは
+
+機械学習にまつわる実験を記録、管理するためのプラットフォーム
+
+# mnistでやってみた
+
+必要なのはモデル、ジョブ定義のためのハイパラ、データ
